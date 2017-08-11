@@ -9,7 +9,7 @@ export class ServersComponent implements OnInit {
 
  allowServer = false;
  poat = "this is potatos"
- poatless = ""
+ poatless = "it's all fried"
 
   constructor() { 
   	setTimeout(() => {
