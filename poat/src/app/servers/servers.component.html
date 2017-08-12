@@ -3,12 +3,12 @@
 <input 
 	type="text" 
 	class="form-control"
-	[(ngModel)]="poatless">
+	[(ngModel)]="servName">
 
 <button 
 	class="btn btn-primary" 
 	[disabled]="!allowServer"
-	(click)="onPoat()">Add Servr</button>
-<div>{{poatless}}</div>
+	(click)="onCreateServ()">Add Servr</button>
+<div>{{servStatus}}</div>
 <app-server></app-server>
 <app-server></app-server>

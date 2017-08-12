@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
 
  allowServer = false;
- poat = "this is potatos"
- poatless = "it's all fried"
+ servStatus = "this is potatos"
+ servName = "it's all fried"
 
   constructor() { 
   	setTimeout(() => {
@@ -17,12 +17,12 @@ export class ServersComponent implements OnInit {
   	}, 2000)
   }
 
-  onPoat() {
-  	this.poat = 'this is not potatos'
+  onCreateServ() {
+  	this.servStatus = 'this is not potatos ' + this.servName
   }
 
-  onUpPoat(event: Event) {
-  	this.poatless = (<HTMLInputElement>event.target).value
+  onUpdateServName(event: Event) {
+  	this.servName = (<HTMLInputElement>event.target).value
   }
 
   ngOnInit() {
