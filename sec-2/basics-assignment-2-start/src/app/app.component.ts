@@ -7,12 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	notEmpty = 0
 	username = ''
+	notEmpty = false
 
-	constructor() {
-		this.username.length > 0 ? this.notEmpty = 1: this.notEmpty = 0
-	}
+	
 
 	submit(event: Event){
 		this.username = ''
