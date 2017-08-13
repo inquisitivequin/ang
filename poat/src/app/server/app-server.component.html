@@ -1,2 +1,2 @@
 <h2 [ngStyle]="{backgroundColor: getColor()}"
-    [ngClass]="{color: fontColor}">Server {{serverId}} is {{getServerStatus()}}</h2>
+    [ngClass]="{fontColor: serverStatus === 'online'}">Server {{serverId}} is {{getServerStatus()}}</h2>

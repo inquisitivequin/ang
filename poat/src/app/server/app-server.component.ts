@@ -5,7 +5,7 @@ import  { Component, OnInit } from '@angular/core'
 	selector: 'app-server',
 	templateUrl: './app-server.component.html',
 	styles: [`
-		#fontColor {
+		.fontColor {
 			color: white
 		}
 	`]
