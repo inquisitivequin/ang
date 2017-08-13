@@ -7,18 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
- allowServer = false;
- servStatus = "this is potatos"
+ newServ = ''
  servName = "it's all fried"
-
-  constructor() { 
-  	setTimeout(() => {
-  		this.allowServer = true
-  	}, 2000)
-  }
+ updateStat = false;
 
   onCreateServ() {
-  	this.servStatus = 'this is not potatos ' + this.servName
+  	this.updateStat = true;
+  	this.newServ = 'this is not potatos ' + this.servName
   }
 
   onUpdateServName(event: Event) {
