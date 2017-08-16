@@ -10,6 +10,9 @@
 
         <button class='btn btn-primary' (click)="btn()">Display Details</button>
         <p [hidden]="btnState">Poat this potato stand fool</p>
+        <div *ngFor="let item of clicks; let i = index" 
+            [ngStyle]="{backgroundColor: i >=4 ? 'blue' : 'white'}"
+              >{{item}}</div>
       </ol>
     </div>
   </div>
