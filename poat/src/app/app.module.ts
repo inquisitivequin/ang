@@ -3,17 +3,26 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SuccesscdComponent } from './recipes/recipe-edit/src/app/successcd/successcd.component';
-import { RecipeItemComponent } from './recipes/src/app/recipes/recipe-item/recipe-item.component';
-import { RecipeDetailComponent } from './recipes/src/app/recipes/recipe-detail/recipe-detail.component';
+import { HeaderComponent } from './header/app-header.component'
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component';
+import { RecipeList } from './recipes/recipe-list.component'
+import { EditList } from './shopping-list/edit-list/edit-list.component'
+import { ShoppingList } from './shopping-list/shoppinglist.component'
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SuccesscdComponent,
+    HeaderComponent,
+    RecipeDetailComponent,
     RecipeItemComponent,
-    RecipeDetailComponent
+    RecipeList,
+    EditList,
+    ShoppingList
+
+    
   ],
   imports: [
     BrowserModule,
