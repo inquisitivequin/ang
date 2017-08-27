@@ -8,7 +8,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component';
 import { RecipeList } from './recipes/recipe-list.component'
 import { EditList } from './shopping-list/edit-list/edit-list.component'
-import { ShoppingList } from './shopping-list/shoppinglist.component'
+import { ShoppingList } from './shopping-list/shoppinglist.component';
+import { RecipesComponent } from './recipes/recipes.component'
 
 
 
@@ -20,7 +21,8 @@ import { ShoppingList } from './shopping-list/shoppinglist.component'
     RecipeItemComponent,
     RecipeList,
     EditList,
-    ShoppingList
+    ShoppingList,
+    RecipesComponent
 
     
   ],
